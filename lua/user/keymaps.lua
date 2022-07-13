@@ -19,6 +19,9 @@ vim.g.mapleader = " "
 -- open netrw
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
+--open terminal
+keymap("n", "<leader>t", ":bo term<CR>", opts)
+
 -- move line up or down
 keymap("n", "J", ":m .+1<CR>==", opts)
 keymap("n", "K", ":m .-2<CR>==", opts)

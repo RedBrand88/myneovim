@@ -2,6 +2,8 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'

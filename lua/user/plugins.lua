@@ -11,8 +11,6 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'gruvbox-community/gruvbox'
-Plug ('junegunn/fzf', {['do'] = vim.fn['fzf#install']})
-Plug 'junegunn/fzf.vim'
 Plug ('nvim-treesitter/nvim-treesitter', {['do'] = vim.fn[':TSUpdate']})
 
 Plug 'neovim/nvim-lspconfig'

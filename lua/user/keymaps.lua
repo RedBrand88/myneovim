@@ -93,15 +93,10 @@ keymap("v", "K", ":m .-2<CR>==", opts)
 -- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 -- keymap("n", "<leader>ff", "<cmd>:lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = true})<cr>", opts)
-keymap("n", "<leader>fr", ":Telescope live_grep<CR>", opts)
-keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-
--- fzf
-keymap("n", "<leader>p", ":Files<CR>", opts)
-keymap("n", "<leader>b", ":Buffers<CR>", opts)
-keymap("n", "<leader>r", ":Rg<CR>", opts)
+keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 
 -- Git
 -- keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

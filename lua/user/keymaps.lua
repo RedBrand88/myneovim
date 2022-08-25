@@ -23,8 +23,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>t", ":bo term<CR>", opts)
 
 -- move line up or down
-keymap("n", "J", ":m .+1<CR>==", opts)
-keymap("n", "K", ":m .-2<CR>==", opts)
+keymap("n", ",j", ":m .+1<CR>==", opts)
+keymap("n", ",k", ":m .-2<CR>==", opts)
 
 -- save file
 keymap("n", "<leader>w", ":w<CR>", opts)
@@ -37,10 +37,10 @@ keymap("n", "<leader>l", "<C-w>l", opts)
 keymap("n", "<leader>o", "<C-w>o", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-k>", ":resize -2<CR>", opts)
+keymap("n", "<C-j>", ":resize +2<CR>", opts)
+keymap("n", "<C-h>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-l>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -61,10 +61,6 @@ keymap("v", ">", ">gv", opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
-
--- move text
-keymap("v", "J", ":m .+1<CR>==", opts)
-keymap("v", "K", ":m .-2<CR>==", opts)
 
 -- Plugins --
 
@@ -98,7 +94,7 @@ keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>h", ":Telescope help_tags<CR>", opts)
-keymap("n", "<leader>t", "Telescope treesitter<CR>", opts)
+keymap("n", "<leader>T", "Telescope treesitter<CR>", opts)
 
 -- Git
 -- keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

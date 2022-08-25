@@ -97,6 +97,8 @@ keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 -- keymap("n", "<leader>ff", "<cmd>:lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = true})<cr>", opts)
 keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>h", ":Telescope help_tags<CR>", opts)
+keymap("n", "<leader>t", "Telescope treesitter<CR>", opts)
 
 -- Git
 -- keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

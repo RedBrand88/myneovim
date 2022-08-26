@@ -36,7 +36,7 @@ keymap("n", "<leader>k", "<C-w>k", opts)
 keymap("n", "<leader>l", "<C-w>l", opts)
 keymap("n", "<leader>o", "<C-w>o", opts)
 
--- Resize with arrows
+-- Resize with movement keys
 keymap("n", "<C-k>", ":resize -2<CR>", opts)
 keymap("n", "<C-j>", ":resize +2<CR>", opts)
 keymap("n", "<C-h>", ":vertical resize -2<CR>", opts)
@@ -47,7 +47,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<S-q>", "<cmd>bdelete<CR>", opts)
 
 -- Insert --
 
@@ -85,12 +85,8 @@ keymap("v", "p", '"_dP', opts)
 -- v enter the file/directory under the cursor
 -- % open a new file in the netrw's current directory
 
--- NvimTree
--- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
--- keymap("n", "<leader>ff", "<cmd>:lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = true})<cr>", opts)
 keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>h", ":Telescope help_tags<CR>", opts)

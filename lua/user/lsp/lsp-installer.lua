@@ -7,14 +7,14 @@ local servers = {
   "sumneko_lua",
   "cssls",
   "html",
-  "tsserver",
   "pyright",
   "bashls",
   "jsonls",
   "dartls",
   "gopls",
   "graphql",
-  "tailwindcss"
+  "tailwindcss",
+  "tsserver"
 }
 
 lsp_installer.setup()
@@ -31,6 +31,11 @@ for _, server in pairs(servers) do
     on_attach = require("user.lsp.handlers").on_attach,
     capabilities = require("user.lsp.handlers").capabilities,
   }
+
+  -- if server == "tsserver" then
+  --   local tsserver_opts = require "user.lsp.settings.tsserver"
+  --   opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
+  -- end
 
   if server == "sumneko_lua" then
     local sumneko_opts = require "user.lsp.settings.sumneko_lua"

@@ -5,14 +5,7 @@ end
 
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = {
-        "go",
-        "typescript",
-        "javascript",
-        "python",
-        "dart",
-        "markdown",
-        "vim",
-        "lua",
+        "all"
     }, -- one of "all" or a list of languages
     auto_install = true,
 	ignore_install = { "" }, -- List of parsers to ignore installing

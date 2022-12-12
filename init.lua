@@ -1,10 +1,16 @@
-require "user.treesitter"
-require "user.plugins"
-require "user.colorscheme"
-require "user.options"
-require "user.keymaps"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.autopairs"
-require "user.nvimtree"
+require("bbashein.plugins-setup")
+require("bbashein.core.colorscheme")
+require("bbashein.core.options")
+require("bbashein.core.keymaps")
+require("bbashein.plugins.comment")
+require("bbashein.plugins.nvim-tree")
+require("bbashein.plugins.lualine")
+require("bbashein.plugins.telescope")
+require("bbashein.plugins.nvim-cmp")
+require("bbashein.plugins.lsp.mason")
+require("bbashein.plugins.lsp.lspsaga")
+require("bbashein.plugins.lsp.lspconfig")
+require("bbashein.plugins.lsp.null-ls")
+require("bbashein.plugins.autopairs")
+require("bbashein.plugins.treesitter")
+require("bbashein.plugins.gitsigns")
